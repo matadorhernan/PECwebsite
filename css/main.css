@@ -1,0 +1,490 @@
+@import url(Bahnschrift.woff2);
+
+.bahnschrift {
+    font-family: 'Bahnschrift', 'Adobe Blank';
+}
+
+body {
+    background: #EFEFEF;
+}
+
+/* NAV BAR */
+
+.navbar {
+    padding: 0;
+    box-shadow: 0 0 3px 3px #0000001e;
+    position: fixed;
+    width: 100%;
+    z-index: 1020;
+}
+
+.navbar-brand {
+
+    height: 50px;
+    background: url(/img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+    background-position-x: left;
+
+    min-width: 150px;
+    margin-left: 10px;
+
+}
+
+.flag-container {
+    position: absolute;
+    overflow: hidden;
+    width: 200px;
+    height: 50px;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%);
+}
+
+.flag-container a {
+
+    background-size: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+
+    box-sizing: content-box;
+    border-radius: 50%;
+    border: 2px solid white;
+
+    cursor: pointer;
+
+}
+
+.flag-container a:nth-child(2) {
+    background-image: url(/img/flg/mex.png);
+}
+
+.flag-container a:nth-child(3) {
+    background-image: url(/img/flg/usa.png);
+}
+
+.flag-circle {
+
+    position: absolute;
+    background: #F5F5F5;
+    height: 150px;
+    width: 150px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translateY(-20px);
+
+}
+
+/* MAIN HEADER */
+
+.main-img {
+
+    position: relative;
+
+    background-image: url(/img/bg/Ductos.png);
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+    /* background-attachment: fixed; */
+}
+
+.main-title {
+
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-title h1 {
+
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+.main-title h1 span {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+.main-title h1 span::after {
+    content: '';
+    background: url(/img/logo.png);
+    height: 30px;
+    background-repeat: no-repeat;
+    filter: brightness(0) invert(1) drop-shadow(0px 0px 5px black);
+    background-size: contain;
+}
+
+/* Main Subtitle */
+
+.pec-title {
+    color: #5E040A;
+}
+
+.pec-title span {
+    color: #323232;
+}
+
+.main-caption::before {
+    position: absolute;
+    bottom: 0;
+    height: 250px;
+    width: 100%;
+    background: url(/img/bg/mapa.png);
+    background-repeat: no-repeat;
+    content: '';
+
+    z-index: -1;
+    opacity: .1;
+}
+
+.main-caption {
+    position: absolute;
+    background: #ffffff8a;
+
+    width: 100%;
+    height: 250px;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    z-index: 1;
+}
+
+.vista-link::after {
+    content: 'VER MAS...';
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 5px 40px;
+    background: white;
+    color: #5E040A;
+    box-shadow: 0 0 8px 3px #0000001e;
+
+    transform: translate(-50%, 50%);
+    border-radius: 7px;
+}
+
+/* BRANDS */
+
+.brands {
+    margin-top: 30px;
+    background: url(/img/bg/Ductos2.png);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+
+    overflow: hidden;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.brands .recone:nth-child(1) {
+    position: absolute;
+    background: #fff;
+    height: 50%;
+    width: 200%;
+    transform: rotate(10deg) translate(0, 140%);
+}
+
+.brands .recone:nth-child(2) {
+    position: absolute;
+    content: '';
+    background: white;
+    height: 50%;
+    width: 200%;
+    transform: rotate(5deg) translate(0, 80%);
+}
+
+.brands .recone:nth-child(1)::after {
+    position: absolute;
+    content: '';
+    background: #ffffff77;
+    height: 100%;
+    width: 100%;
+    transform: translate(0, 5%);
+}
+
+.brand-table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.brand-table .row {
+    width: 60%;
+    bottom: 0;
+    padding-bottom: 100px;
+}
+
+.brand-item {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+/* BARNDING IMAGES */
+
+.brand-table .row .brand-item:nth-child(1) {
+    background-image: url(/img/brands/Rockwell.svg);
+}
+
+.brand-table .row .brand-item:nth-child(2) {
+    background-image: url(/img/brands/baldor.png);
+}
+
+.brand-table .row .brand-item:nth-child(3) {
+    background-image: url(/img/brands/siemens.png);
+}
+
+.brand-table .row .brand-item:nth-child(4) {
+    background-image: url(/img/brands/omron.png);
+}
+
+.brand-table .row .brand-item:nth-child(5) {
+    background-image: url(/img/brands/mitsubishi.png);
+}
+
+.brand-table .row .brand-item:nth-child(6) {
+    background-image: url(/img/brands/fanuc.png);
+}
+
+.brand-table .row .brand-item:nth-child(7) {
+    background-image: url(/img/brands/ABB.svg);
+}
+
+.brand-table .row .brand-item:nth-child(8) {
+    background-image: url(/img/brands/telephon.png);
+}
+
+.brand-table .row .brand-item:nth-child(9) {
+    background-image: url(/img/brands/yaskawa.png);
+}
+
+.brand-table .row .brand-item:nth-child(10) {
+    background-image: url(/img/brands/Honeywell.png);
+}
+
+.brand-table .row .brand-item:nth-child(11) {
+    background-image: url(/img/brands/fluke.png);
+}
+
+.brand-table .row .brand-item:nth-child(12) {
+    background-image: url(/img/brands/hitachi.png);
+}
+
+.brand-table .row .brand-item:nth-child(13) {
+    background-image: url(/img/brands/legrand.png);
+}
+
+.brand-table .row .brand-item:nth-child(14) {
+    background-image: url(/img/brands/panduit.png);
+}
+
+.brand-table .row .brand-item:nth-child(15) {
+    background-image: url(/img/brands/BALLUFF.png);
+}
+
+.brand-table .row .brand-item:nth-child(16) {
+    background-image: url(/img/brands/FESTO.png);
+}
+
+.brand-table .row .brand-item:nth-child(17) {
+    background-image: url(/img/brands/Keyence.png);
+}
+
+/* SERVICES SECTION */
+
+.services {
+    background-image: linear-gradient(#000000dc, #000000dc), url("/img/bg/cables.png");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.services .recone:nth-child(1) {
+
+    position: absolute;
+    content: '';
+    background: white;
+    height: 30%;
+    width: 200%;
+}
+
+.services .recone:nth-child(2) {
+    position: absolute;
+    content: '';
+    background: white;
+    height: 40%;
+    width: 200%;
+    transform: rotate(5deg) translate(0, 50%);
+}
+
+.services .recone:nth-child(2)::after {
+    position: absolute;
+    content: '';
+    background: #ffffff77;
+    height: 100%;
+    width: 100%;
+    transform: translate(0, 5%);
+}
+
+.hex {
+    position: relative;
+    margin: 1em auto;
+    width: 10em;
+    height: 17.32em;
+    border-radius: 1em/.5em;
+    background: white;
+
+    transform: scale(.4);
+
+    opacity: .33;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.hex:before,
+.hex:after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
+}
+
+.hex:before {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.hex:after {
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.hex:hover {
+    opacity: .6;
+}
+
+.hex-text {
+    font-size: 11px;
+    width: 100px;
+    height: 60px;
+    color: white;
+    transform: translate(0, -90px);
+    text-align: center;
+    cursor: pointer;
+}
+
+.hex-items div a {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: translate(0, 130px) scale(1.5);
+}
+
+.hex-items div:nth-child(1) a {
+    background-image: url(/img/icons/one.png);
+}
+
+.hex-items div:nth-child(2) a {
+    background-image: url(/img/icons/two.png);
+}
+
+.hex-items div:nth-child(3) a {
+    background-image: url(/img/icons/three.png);
+}
+
+.hex-items div:nth-child(4) a {
+    background-image: url(/img/icons/four.png);
+}
+
+.hex-items div:nth-child(5) a {
+    background-image: url(/img/icons/five.png);
+}
+
+.hex-items div:nth-child(6) a {
+    background-image: url(/img/icons/six.png);
+}
+
+/* END SECTION */
+.end-img {
+    height: 600px;
+    background: url(/img/bg/cables2.png);
+    background-repeat: no-repeat;
+}
+
+.dark-pec {
+    background: url(/img/logo.png);
+    height: 30px;
+    background-repeat: no-repeat;
+   
+    background-size: contain;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: black;
+height: auto;
+padding: 30px;
+}
+
+footer i {
+    margin-top: 5px;
+    color: #212529;
+}
+
+footer h2 {
+    font-size: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.footer-brand {
+    background: url(/img/logo.png);
+    height: 30px;
+    background-repeat: no-repeat;
+    filter: brightness(0) invert(1);
+    background-size: contain;
+}
