@@ -1,0 +1,44 @@
+.gallery-item {
+    height: 300px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery-item:nth-child(1){
+    background-image: url(/img/gallery/12053256576_8bbeaf0e7a_k.jpg);
+}
+.gallery-item:nth-child(2){
+    background-image: url(/img/gallery/12053259896_18aab0ec7c_k.jpg);
+}
+.gallery-item:nth-child(3){
+    background-image: url(/img/gallery/6020778507_0c9f84f899_o.jpg);
+}
+.gallery-item:nth-child(4){
+    background-image: url(/img/gallery/15272052687_169d24689a_k.jpg);
+}
+.gallery-item:nth-child(5){
+    background-image: url(/img/gallery/15470764402_2208e0d7a8_k.jpg);
+}
+.gallery-item:nth-child(6){
+    background-image: url(/img/gallery/23757793155_979336f0ce_h.jpg);
+}
+
+.gallery-item:nth-child(7){
+    background-image: url(/img/gallery/29863591777_3c96d19f4d_b.jpg);
+}
+.gallery-item:nth-child(8){
+    background-image: url(/img/gallery/28929584845_204bcccdf9_h.jpg);
+}
+.gallery-item:nth-child(9){
+    background-image: url(/img/gallery/3395596707_7cb722f350_o.jpg);
+}
+.gallery-item:nth-child(10){
+    background-image: url(/img/gallery/13284323683_2d6c0882d4_k.jpg);
+}
+.gallery-item:nth-child(11){
+    background-image: url(/img/gallery/6020779105_d11a40b97c_b.jpg);
+}
+.gallery-item:nth-child(12){
+    background-image: url(/img/gallery/8614656062_39c8e09cfd_b.jpg);
+}

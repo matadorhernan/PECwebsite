@@ -1,0 +1,191 @@
+/* HEADER */
+.main-img {
+
+    position: relative;
+
+    background-image: url(/img/gallery/29863591777_3c96d19f4d_b.jpg);
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: 1000;
+
+    overflow: hidden;
+     background-attachment: fixed; 
+}
+
+.main-contact {
+    height: 600px;
+}
+
+.main-contact h1 {
+    font-size: 130px;
+    line-height: 130px;
+    /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.589); */
+}
+
+.main-contact h1 span::after {
+    background-position: right;
+}
+
+.main-contact .main-caption::before {
+    position: absolute;
+    bottom: 0;
+    height: 250px;
+    width: 100%;
+    background: transparent;
+    background-repeat: no-repeat;
+    content: '';
+
+    z-index: -1;
+    opacity: .1;
+}
+
+
+.main-caption {
+
+    position: absolute;
+    background: #ffffff00;
+
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    z-index: 1;
+}
+
+.slogan {
+    position: absolute;
+    transform: translate(0, -270px);
+    z-index: 2;
+}
+.grand-hex {
+    transform: translate(-20%, -32.5%) rotate(0deg) scale(1.1);
+    opacity: .4;
+}
+.grand-hex:nth-child(1) {
+    transform: translate(-15%, -32.5%) rotate(0deg) scale(1.1);
+}
+
+.contact {
+    position: relative;
+    background-image: linear-gradient(180deg, #ffffff8a 20%, #00000065 60%), url(/img/bg/fanucs.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    z-index: 3000;
+}
+
+.contact .container {
+    padding-top: 140px;
+}
+
+.star-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    transform: translate(0, -27px);
+}
+
+.stars {
+    position: absolute;
+    padding: 0 10px;
+    width: 100px;
+}
+
+.fa-star {
+    
+    color: gold;
+}
+/* 
+.stars:nth-child(2) i:nth-child(5) {
+    width: 9px;
+    overflow: hidden;
+} */
+
+.cust-icon {
+    height: 40px;
+    width: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 10px;
+}
+
+.cust-icon:nth-child(1) {
+    background-image: url(/img/custColor/fanuc.png);
+}
+
+.cust-icon:nth-child(2) {
+    background-image: url(/img/custColor/kensei.png);
+}
+
+.cust-icon:nth-child(3) {
+    background-image: url(/img/custColor/lear.png);
+}
+
+.cust-icon:nth-child(4) {
+    background-image: url(/img/custColor/nissan.png);
+}
+
+.cust-icon:nth-child(5) {
+    background-image: url(/img/custColor/pollo.png);
+}
+
+.cust-icon:nth-child(6) {
+    background-image: url(/img/custColor/romo.png);
+}
+
+.cust-icon:nth-child(7) {
+    background-image: url(/img/custColor/sacred.png);
+}
+
+.cust-icon:nth-child(8) {
+    background-image: url(/img/custColor/sensata.png);
+}
+
+.cust-icon:nth-child(9) {
+    background-image: url(/img/custColor/tachis.png);
+}
+.cust-icon:nth-child(10) {
+    background-image: url(/img/custColor/flextronics.png);
+}
+.cust-icon:nth-child(11) {
+    background-image: url(/img/custColor/bosch.png);
+}
+.cust-icon:nth-child(12) {
+    background-image: url(/img/custColor/donaldson.png);
+}
+.cust-icon:nth-child(13) {
+    background-image: url(/img/custColor/jatco.png);
+}
+.cust-icon:nth-child(14) {
+    background-image: url(/img/custColor/compas.png);
+}
+.cust-icon:nth-child(15) {
+    background-image: url(/img/custColor/honda.png);
+}
+.cust-icon:nth-child(16) {
+    background-image: url(/img/custColor/voestalpine.png);
+}
+.cust-icon:nth-child(17) {
+    background-image: url(/img/custColor/penoles.png);
+}
+
+@media (max-width: 1600px) {
+
+    .grand-hex {
+        transform: translate(-50%, -32.5%) rotate(0deg) scale(1.1);
+    }
+    .grand-hex:nth-child(1) {
+        transform: translate(-55%, -32.5%) rotate(0deg) scale(1.1);
+    }
+
+}

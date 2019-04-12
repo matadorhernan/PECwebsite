@@ -1,7 +1,7 @@
-@import url(Bahnschrift.woff2);
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:300,400,500,700,900');
 
 .bahnschrift {
-    font-family: 'Bahnschrift', 'Adobe Blank';
+    font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 body {
@@ -13,15 +13,14 @@ body {
 .navbar {
     padding: 0;
     box-shadow: 0 0 3px 3px #0000001e;
-    position: fixed;
     width: 100%;
-    z-index: 1020;
+    z-index: 5000;
 }
 
 .navbar-brand {
 
     height: 50px;
-    background: url(/img/logo.png);
+    background: url(/img/NewLogo/INDUSTRIAL.png);
     background-repeat: no-repeat;
     background-size: 150px;
     background-position: center;
@@ -86,13 +85,15 @@ body {
 
     position: relative;
 
-    background-image: url(/img/bg/Ductos.png);
+    background-image: url(/img/gallery/12053259896_18aab0ec7c_k.jpg);
     background-repeat: no-repeat;
     height: 800px;
     width: 100%;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
+    z-index: 1000;
 
+    overflow: hidden;
     /* background-attachment: fixed; */
 }
 
@@ -104,15 +105,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .main-title h1 {
 
     font-size: 40px;
     line-height: 40px;
-    color: white;
-    text-shadow: 0px 0px 5px black;
+    color: #0a193b;
+    /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.596); */
 }
 
 .main-title h1 span {
@@ -125,21 +125,84 @@ body {
 
 .main-title h1 span::after {
     content: '';
-    background: url(/img/logo.png);
+    background: url(/img/NewLogo/INDUSTRIAL.png);
     height: 30px;
     background-repeat: no-repeat;
-    filter: brightness(0) invert(1) drop-shadow(0px 0px 5px black);
     background-size: contain;
+}
+
+.main-list {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    font-weight: 600;
+}
+
+.main-list li {
+    cursor: pointer;
+}
+
+.main-list .serv-icon {
+    display: block;
+    height: 30px;
+    width: 30px;
+
+    background-repeat: no-repeat;
+    filter: invert(1) opacity(.8);
+    background-size: contain;
+    background-position: center;
+}
+
+.main-list li:hover .row {
+    transform: translateX(10px);
+}
+
+.main-list li:nth-child(2) .serv-icon {
+    background-image: url(/img/icons/one.png);
+}
+
+.main-list li:nth-child(3) .serv-icon {
+    background-image: url(/img/icons/three.png);
+}
+
+.main-list li:nth-child(4) .serv-icon {
+    background-image: url(/img/icons/two.png);
+}
+
+.main-list li:nth-child(5) .serv-icon {
+    background-image: url(/img/icons/five.png);
+}
+
+.main-list li:nth-child(6) .serv-icon {
+    background-image: url(/img/icons/four.png);
+}
+
+.main-list li:nth-child(7) .serv-icon {
+    background-image: url(/img/icons/seven.png);
+}
+
+.main-list li:nth-child(8) .serv-icon {
+    background-image: url(/img/icons/six.png);
+}
+
+.main-list .active {
+    cursor: default;
+    background: #F5F5F5;
+    border: none;
+    color: #0A193B;
 }
 
 /* Main Subtitle */
 
 .pec-title {
-    color: #5E040A;
+    color: #d8000e
 }
 
 .pec-title span {
-    color: #323232;
+    color: #0a193b;
+}
+
+.bg-pec {
+    background: #0a193b;
 }
 
 .main-caption::before {
@@ -170,11 +233,15 @@ body {
     z-index: 1;
 }
 
+.statement {
+    height: 200px;
+}
+
 .vista-link::after {
     content: 'VER MAS...';
 
     position: absolute;
-    bottom: 0;
+    bottom: -40;
     left: 50%;
     padding: 5px 40px;
     background: white;
@@ -183,6 +250,83 @@ body {
 
     transform: translate(-50%, 50%);
     border-radius: 7px;
+    cursor: pointer;
+}
+
+/*Grand Hex*/
+
+.grand-hex {
+    position: absolute;
+    z-index: -1;
+    width: 1005px;
+    height: 1600px;
+    border-radius: 100px;
+    /* background: #081624; */
+    background: #ffffff;
+    opacity: .6;
+    transform: translate(-70%, -30%) rotate(0deg);
+}
+
+.grand-hex:nth-child(1) {
+    transform: translate(-80%, -30%) rotate(0deg);
+}
+
+.grand-hex:before,
+.grand-hex:after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
+}
+
+.grand-hex:before {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.grand-hex:after {
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+/*CAROUSEL*/
+.carousel {
+    margin-top: 30px;
+    height: 600px;
+}
+
+.carousel div div .container {
+    height: 600px;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(42, 42, 42, 0.712), rgba(42, 42, 42, 0.726)), url(/img/bg/fanucs.png);
+    background-size: cover;
+}
+
+.carousel-image {
+    height: 500px;
+    width: 500px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.carousel .carousel-item .carousel-image {
+    background-image: url(/img/props/robotua.png);
+}
+
+.carousel .carousel-item:nth-child(2) .carousel-image {
+    background-image: url(/img/props/robotmison.png);
+}
+
+.carousel .carousel-item:nth-child(3) .carousel-image {
+    background-image: url(/img/props/robotvision.png);
 }
 
 /* BRANDS */
@@ -225,6 +369,10 @@ body {
     transform: translate(0, 5%);
 }
 
+.brands h2 {
+    width: 50%;
+}
+
 .brand-table {
     display: flex;
     flex-direction: column;
@@ -234,7 +382,6 @@ body {
 }
 
 .brand-table .row {
-    width: 60%;
     bottom: 0;
     padding-bottom: 100px;
 }
@@ -258,15 +405,15 @@ body {
 }
 
 .brand-table .row .brand-item:nth-child(2) {
-    background-image: url(/img/brands/baldor.png);
+    background-image: url(/img/brands/baldorNormal.png);
 }
 
 .brand-table .row .brand-item:nth-child(3) {
-    background-image: url(/img/brands/siemens.png);
+    background-image: url(/img/brands/siemensNormal.png);
 }
 
 .brand-table .row .brand-item:nth-child(4) {
-    background-image: url(/img/brands/omron.png);
+    background-image: url(/img/brands/omronNormal.png);
 }
 
 .brand-table .row .brand-item:nth-child(5) {
@@ -274,7 +421,7 @@ body {
 }
 
 .brand-table .row .brand-item:nth-child(6) {
-    background-image: url(/img/brands/fanuc.png);
+    background-image: url(/img/brands/fanucNormal.png);
 }
 
 .brand-table .row .brand-item:nth-child(7) {
@@ -282,11 +429,11 @@ body {
 }
 
 .brand-table .row .brand-item:nth-child(8) {
-    background-image: url(/img/brands/telephon.png);
+    background-image: url(/img/brands/telephonNormal.png);
 }
 
 .brand-table .row .brand-item:nth-child(9) {
-    background-image: url(/img/brands/yaskawa.png);
+    background-image: url(/img/brands/yaskawaNormal.png);
 }
 
 .brand-table .row .brand-item:nth-child(10) {
@@ -298,27 +445,46 @@ body {
 }
 
 .brand-table .row .brand-item:nth-child(12) {
-    background-image: url(/img/brands/hitachi.png);
+    background-image: url(/img/brands/hitachiNormal.png);
 }
 
 .brand-table .row .brand-item:nth-child(13) {
-    background-image: url(/img/brands/legrand.png);
+    background-image: url(/img/brands/legrandNormal.png);
 }
 
 .brand-table .row .brand-item:nth-child(14) {
-    background-image: url(/img/brands/panduit.png);
+    background-image: url(/img/brands/panduitNormal.png);
 }
 
 .brand-table .row .brand-item:nth-child(15) {
-    background-image: url(/img/brands/BALLUFF.png);
+    background-image: url(/img/brands/BALLUFFNormal.png);
 }
 
 .brand-table .row .brand-item:nth-child(16) {
-    background-image: url(/img/brands/FESTO.png);
+    background-image: url(/img/brands/FESTONormal.png);
 }
 
 .brand-table .row .brand-item:nth-child(17) {
     background-image: url(/img/brands/Keyence.png);
+}
+
+/* PEC ROBOT */
+
+.pec-robot {
+    position: relative;
+}
+
+.robot {
+    position: absolute;
+    background: url(/img/props/pecrobot.png);
+    background-size: contain;
+    background-position: center;
+    width: 30em;
+    height: 30em;
+    z-index: 2;
+    right: 50px;
+
+    transform: translate(0, -40px);
 }
 
 /* SERVICES SECTION */
@@ -360,21 +526,32 @@ body {
     transform: translate(0, 5%);
 }
 
-.hex {
+.hex-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hex-items>div.align-items-center {
+    height: 160px;
+    width: 160px;
+    margin-bottom: 50px;
     position: relative;
-    margin: 1em auto;
-    width: 10em;
-    height: 17.32em;
-    border-radius: 1em/.5em;
+}
+
+.hex {
+    position: absolute;
+    width: 95px;
+    height: 180px;
+    height: inherit;
+    border-radius: 10px/5px;
     background: white;
-
-    transform: scale(.4);
-
+    transform: scale(.7);
     opacity: .33;
     cursor: pointer;
     transition: .3s;
-
 }
+
+
 
 .hex:before,
 .hex:after {
@@ -396,18 +573,20 @@ body {
     transform: rotate(-60deg);
 }
 
-.hex:hover {
+.hex-hover:hover {
     opacity: .6;
 }
 
 .hex-text {
+    position: absolute;
     font-size: 11px;
     width: 100px;
-    height: 60px;
     color: white;
-    transform: translate(0, -90px);
     text-align: center;
     cursor: pointer;
+
+    bottom: 0;
+    transform: translate(0, 100%);
 }
 
 .hex-items div a {
@@ -418,8 +597,8 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-
-    transform: translate(0, 130px) scale(1.5);
+    top: 50%;
+    transform: translate(0, -50%) scale(1.5);
 }
 
 .hex-items div:nth-child(1) a {
@@ -427,47 +606,94 @@ body {
 }
 
 .hex-items div:nth-child(2) a {
-    background-image: url(/img/icons/two.png);
-}
-
-.hex-items div:nth-child(3) a {
     background-image: url(/img/icons/three.png);
 }
 
-.hex-items div:nth-child(4) a {
-    background-image: url(/img/icons/four.png);
+.hex-items div:nth-child(3) a {
+    background-image: url(/img/icons/two.png);
 }
 
-.hex-items div:nth-child(5) a {
+.hex-items div:nth-child(4) a {
     background-image: url(/img/icons/five.png);
 }
 
+.hex-items div:nth-child(5) a {
+    background-image: url(/img/icons/four.png);
+}
+
 .hex-items div:nth-child(6) a {
+    background-image: url(/img/icons/seven.png);
+}
+
+.hex-items div:nth-child(7) a {
     background-image: url(/img/icons/six.png);
 }
 
 /* END SECTION */
 .end-img {
+    position: relative;
     height: 600px;
     background: url(/img/bg/cables2.png);
     background-repeat: no-repeat;
+
+    overflow: hidden;
 }
 
+.hex-end-image {
+
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: url(/img/props/robotmison.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    right: -50px;
+    bottom: 50px;
+
+}
+
+.hex-end-image::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: url(/img/props/robotmison.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+
+    transform: translate(-230px, -390px);
+    opacity: .5;
+}
+
+.hex-end-image::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: url(/img/props/robotmison.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+
+    transform: translate(-230px, 390px);
+    opacity: .5;
+}
+/* FOOTER */
+
 .dark-pec {
-    background: url(/img/logo.png);
+    background: url(/img/NewLogo/INDUSTRIAL.png);
     height: 30px;
     background-repeat: no-repeat;
-   
+
     background-size: contain;
 }
 
-
-/* FOOTER */
-
 footer {
     background: black;
-height: auto;
-padding: 30px;
+    height: auto;
+    padding: 30px;
 }
 
 footer i {
@@ -482,9 +708,95 @@ footer h2 {
 }
 
 .footer-brand {
-    background: url(/img/logo.png);
+    background: url(/img/NewLogo/INDUSTRIALN.png);
     height: 30px;
     background-repeat: no-repeat;
-    filter: brightness(0) invert(1);
     background-size: contain;
+}
+
+/*  LOADER  */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    z-index: 9999;
+    opacity: 1;
+    transition: .3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#status {
+
+    width: 250px;
+    height: 100px;
+
+    background: url(../img/NewLogo/INDUSTRIAL.png) no-repeat center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.bar-loading {
+
+    width: 280px;
+    height: 3px;
+    background: #00000010;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+#loader {
+    height: 3px;
+    background: #0C50A4;
+    transition: 1s;
+}
+
+.load-0 {
+    width: 0px;
+}
+
+.load-100 {
+    width: 280px;
+}
+
+.fa-check.text-secondary {
+    color: #0B4FA3 !important;
+}
+
+/* MESSAGE */
+
+.send-msg-cont {
+    background: #fff;
+    border-radius: 10px;
+    width: 500px;
+
+    position: fixed;
+    z-index: 4000;
+    right: 20px;
+    bottom: 0px;
+
+    box-shadow: 0 0 10px 10px #00000010;
+}
+
+.msg-content {
+    padding: 15px;
+}
+
+.bar-maxmin {
+    background: #0A193B;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+
+    cursor: pointer;
 }

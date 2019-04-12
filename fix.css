@@ -1,0 +1,30 @@
+
+.main-services {
+        background-position: center;
+}
+
+.grand-hex {
+    transform: translate(0%, -30%) rotate(0deg) scale(1.2);
+}
+.grand-hex:nth-child(1) {
+    transform: translate(-85%, -30%) rotate(0deg) scale(.8);
+}
+
+.prop:nth-child(3) {
+    background: #9c9c9c;
+}
+
+.big-hex {
+    background: #e2e2e2
+}
+
+@media (max-width: 1600px) {
+
+    .grand-hex {
+        transform: translate(-50%, -30%) rotate(0deg) scale(1.2);
+    }
+    .grand-hex:nth-child(1) {
+        transform: translate(-90%, -30%) rotate(0deg) scale(.8);
+    }
+
+}

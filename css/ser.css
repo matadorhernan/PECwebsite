@@ -1,0 +1,132 @@
+/* SUB NAV */
+
+.subnav {
+    margin-top: 50px;
+    z-index: 1019;
+    background: #ffffffc9;
+}
+
+.subnav a {
+    padding: 10px 20px !important;
+    transition: .1s;
+    position: relative;
+}
+
+.subnav .active a {
+    background: #ffffffcc;
+}
+
+.subnav a:hover {
+    color: #282828 !important;
+}
+
+/* HEADER */
+.main-services {
+    height: 600px;
+    background-image: linear-gradient(90deg, #00000057, #0000003d), url(/img/bg/cables3.png);
+}
+
+.main-services h1 {
+    margin-top: 100px;
+    font-size: 80px;
+    line-height: 80px;
+    /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.589); */
+}
+
+.main-services h1 span::after {
+    background-position: right;
+    transform: translate(0, 10px);
+}
+
+.grand-hex {
+    transform: translate(25%, -32.5%) rotate(0deg) scale(1.2);
+}
+.grand-hex:nth-child(1) {
+    transform: translate(40%, -32.5%) rotate(0deg) scale(.8);
+}
+
+/* CONTENT */
+
+.main-services.services {
+    height: 1100px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.836)), url(/img/bg/cables4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-services.services .recone {
+    height: 52.5%;
+}
+
+.part-one {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hex-gray {
+    background: #F9F9F9;
+    cursor: default;
+}
+
+.prop {
+    position: absolute;
+    opacity: 1;
+}
+
+.prop a {
+    background: url(/img/icons/one.png);
+    position: absolute;
+    height: 150px;
+    width: 150px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 3;
+}
+
+
+.prop:nth-child(1) {
+    transform: translate(0, -32%);
+}
+
+.prop:nth-child(2) {
+    transform: translate(0, 72%);
+}
+.prop:nth-child(3) {
+    transform: translate(158%, 20%);
+    background: #F1F1F1;
+}
+
+.big-hex {
+    position: absolute;
+    margin: 1em auto;
+    width: 10em;
+    height: 17.32em;
+    border-radius: 1em/.5em;
+    background: #f8f8f8;
+    transition: opacity .5s;
+}
+
+.big-hex:before,
+.big-hex:after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
+}
+
+.big-hex:before {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.big-hex:after {
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
