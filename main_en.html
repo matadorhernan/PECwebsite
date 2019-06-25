@@ -29,42 +29,44 @@
     </div>
     <!-- MESSAGER -->
     <div class="send-msg-cont">
-        <div class="bar-maxmin">
-            <span><i class="fa fa-envelope mr-2" aria-hidden="true"></i></span>Contact us
-        </div>
-        <div class="msg-content d-none">
-            <div class="col-12">
-                <div class="form-group">
-                    <input type="text" name="" id="" class="form-control" placeholder="*email"
-                        aria-describedby="helpId">
+        <form action="php/contact.php" method="post" id="contact-form">
+            <div class="bar-maxmin">
+                <span><i class="fa fa-envelope mr-2" aria-hidden="true"></i></span>Contact us
+            </div>
+            <div class="msg-content d-none">
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="text" name="email" id="" class="form-control" placeholder="*email"
+                            aria-describedby="helpId">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="text" name="company" id="" class="form-control" placeholder="*Company"
+                            aria-describedby="helpId">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="text" name="subject" id="" class="form-control" placeholder="*Subject"
+                            aria-describedby="helpId">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="text" name="phone" id="" class="form-control" placeholder="*Phone"
+                            aria-describedby="helpId">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <textarea placeholder="*Message" class="form-control" name="message" id="" rows="8"></textarea>
+                    </div>
+                    <button type="submit" class="btn bg-white font-weight-bold border round ml-auto" 
+                        role="button" value="Send">SEND</button>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="form-group">
-                    <input type="text" name="" id="" class="form-control" placeholder="*Company"
-                        aria-describedby="helpId">
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-group">
-                    <input type="text" name="" id="" class="form-control" placeholder="*Subject"
-                        aria-describedby="helpId">
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-group">
-                    <input type="text" name="" id="" class="form-control" placeholder="*Phone"
-                        aria-describedby="helpId">
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-group">
-                    <textarea placeholder="*Message" class="form-control" name="" id="" rows="8"></textarea>
-                </div>
-                <a name="" id="" class="btn bg-white font-weight-bold border round ml-auto" href="#"
-                    role="button">SEND</a>
-            </div>
-        </div>
+        </form>
     </div>
     <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-expand-xl navbar-light bg-white fixed-top">
@@ -106,78 +108,62 @@
         </div>
     </nav>
     <!-- MAIN HADER -->
+    <div class="col-12 position-relative hex-columnizer">
+        <div class="hex-items hex-main row align-items-center justify-content-center pt-5 position-absolute">
+            <div class="d-flex flex-column align-items-center">
+                <a></a>
+                <div class="hex hex-hover" onclick="location.href='./en/services/serv_en.html'"></div>
+                <h3 class="hex-text"> Control Boards</h3>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <a></a>
+                <div class="hex hex-hover" onclick="location.href='./en/services/inst_en.html'"></div>
+                <h3 class="hex-text">Field Installations</h3>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <a></a>
+                <div class="hex hex-hover" onclick="location.href='./en/services/inst_en.html'"></div>
+                <h3 class="hex-text">PLCs and HMIs</h3>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <a></a>
+                <div class="hex hex-hover" onclick="location.href='./en/services/devs_en.html'"></div>
+                <h3 class="hex-text">Project Development</h3>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <a></a>
+                <div class="hex hex-hover" onclick="location.href='./en/services/apps_en.html'"></div>
+                <h3 class="hex-text">Motion Control</h3>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <a></a>
+                <div class="hex hex-hover" onclick="location.href='./en/services/robs_en.html'"></div>
+                <h3 class="hex-text">Robotics</h3>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <a></a>
+                <div class="hex hex-hover" onclick="location.href='./en/services/caps_en.html'"></div>
+                <h3 class="hex-text">Training</h3>
+            </div>
+        </div>
+    </div>
     <header class="main-img">
         <div class="main-title bahnschrift font-weight-bold ">
-            <div class="container">
-                <div class="grand-hex"></div>
-                <div class="grand-hex"></div>
-                <div class="row">
-                    <div class="col-6 d-flex flex-column justify-content-center align-items-center">
-                        <h1>
-                            PROYECTOS ELÉCTRICOS Y CONTROL INDUSTRIAL<br>
-                            <span class="font-weight-normal">INTEGRADORES DE SISTEMAS PARA LA AUTOMATIZACIÓN</span>
-                        </h1>
-                    </div>
-                    <div class="col-6">
-                        <ul class="list-group main-list">
-                            <li class="list-group-item active">SERVICES</li>
-                            <li class="list-group-item" onclick="location.href='/en/services/serv_en.html';">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-start align-items-center">
-                                        <span><i class="serv-icon mr-3" aria-hidden="true"></i></span>
-                                        Control Boards
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item" onclick="location.href='/en/services/inst_en.html';">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-start align-items-center">
-                                        <span><i class="serv-icon mr-3" aria-hidden="true"></i></span>
-                                        Field Installations
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item" onclick="location.href='/en/services/plcn_en.html';">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-start align-items-center">
-                                        <span><i class="serv-icon mr-3" aria-hidden="true"></i></span>
-                                        PLCs and HMIs
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item" onclick="location.href='/en/services/devs_en.html';">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-start align-items-center">
-                                        <span><i class="serv-icon mr-3" aria-hidden="true"></i></span>
-                                        Project Development
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item" onclick="location.href='/en/services/apps_en.html';">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-start align-items-center">
-                                        <span><i class="serv-icon mr-3" aria-hidden="true"></i></span>
-                                        Motion Control                                     </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item" onclick="location.href='/en/services/robs_en.html';">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-start align-items-center">
-                                        <span><i class="serv-icon mr-3" aria-hidden="true"></i></span>
-                                        Robotica
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item" onclick="location.href='/en/services/caps_en.html';">
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-start align-items-center">
-                                        <span><i class="serv-icon mr-3" aria-hidden="true"></i></span>
-                                        Capacitaciones
-                                    </div>
-                                </div>
-                            </li>
-                            
-                        </ul>
+            <div class="row w-100 mt-4">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="grand-hex"></div>
+                        <div class="grand-hex"></div>
+                        <div class="row">
+
+                            <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                                <div class="image-pec-requested"></div>
+                                <h1>
+                                    ELECTRIC PROJECTS AND INDUSTRIAL CONTROL<br>
+                                    <span class="font-weight-normal">INTEGRATORS OF AUTOMATION SYSTEMS</span>
+                                </h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,14 +186,11 @@
                             <div class="col-md-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="pec-title bahnschrift">NOSOTROS</h2>
-                                        <p class="pec-text">PEC Industrial es una compañía Mexicana fundada en el año
-                                            2002,
-                                            localizada en la ciudad de Aguascalientes, Ags, México. Especializada en el
-                                            desarrollo de la Automatización en general, proyectos
-                                            electromecánicos y el mantenimiento industrial. Desde conceptos básicos,
-                                            hasta
-                                            implementación de sistemas robotizados.</p>
+                                        <h2 class="pec-title bahnschrift">ABOUT US</h2>
+                                        <p class="pec-text">PEC Industrial is a Mexican company founded in 2002. We are
+                                            located in Aguascalientes city, Ags, Mexico. We specialize in the developing
+                                            of general automation, electromagnetic projects and industrial maintenance.
+                                            We cover from basic concepts to the implementation of robotized systems.</p>
                                     </div>
                                 </div>
                             </div>
@@ -222,11 +205,12 @@
                             <div class="col-md-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="pec-title bahnschrift">MISIÓN</h2>
-                                        <p class="pec-text">Somos una empresa de automatización y robótica comprometida
-                                            a contribuir al desarrollo del sector a nivel nacional e internacional, la
-                                            generación de empleos, capacitación en tecnología de vanguardia y el valor
-                                            económico de la sociedad.</p>
+                                        <h2 class="pec-title bahnschrift">MISSION</h2>
+                                        <p class="pec-text">We are a company of automation and robotics. We are
+                                            compromised to contribute to this sector, its development growth to a
+                                            national and international level; employment generation; training in
+                                            vanguard technology; and contribute the economic value of the society.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -241,12 +225,13 @@
                             <div class="col-md-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 class="pec-title bahnschrift">VISIÓN </h2>
-                                        <p class="pec-text">Ser una empresa líder, contar con recursos e infraestructura
-                                            de primer nivel y estar económicamente consolidados. Ofrecer nuestro
-                                            material a los clientes y la ingeniería en instrumentación, automatización y
-                                            control de equipos de proceso, que permita alcanzar sus estándares de
-                                            producción de manera oportuna y confiable.</p>
+                                        <h2 class="pec-title bahnschrift">VISION </h2>
+                                        <p class="pec-text">To be a leading company. To have the best resources and
+                                            infrastructure. To be economically consolidated. We aspire to be able to
+                                            offer our services such as engineering
+                                            of the instrumentation, automation, and the control of process equipment,
+                                            which will allow our clients achieve their production standards in a proper
+                                            and reliable way.</p>
                                     </div>
                                 </div>
                             </div>
@@ -271,9 +256,7 @@
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="col-6">
-                    <h2 class="pec-title bahnschrift"><span>INTEGRADORES
-                            DE SISTEMAS PARA
-                            LA </span>AUTOMATIZACIÓN</h2>
+                    <h2 class="pec-title bahnschrift"><span>INTEGRATORS OF AUTOMATION </span>SYSTEMS</h2>
                 </div>
                 <div class="col-6  h-100">
                     <div class="brand-table">
@@ -311,48 +294,49 @@
         <div class="container h-100">
             <div class="row h-50">
                 <div class="col d-flex flex-column justify-content-center">
-                    <h2 class="pec-title bahnschrift"><span>NUESTROS</span> SERVICIOS</h2>
-                    <p class="pec-text">En PEC Industrial, nos enfocamos a que nuestros clientes mejoren su
-                        rentabilidad mediante el diseño de estrategias y la automatización
-                        industrial, apoyándolos en el control y monitoreo de sus procesos.</p>
+                    <h2 class="pec-title bahnschrift"><span>OUR</span> SERVICES</h2>
+                    <p class="pec-text">In PEC Industrial, our clients are our main focus. We are able to help them to
+                        improve and achieve a better rentability with the use of designed strategies and industrial
+                        automation. PEC Industrial, also, is able to support clients during the control and the
+                        monitoring of their own processes.</p>
                 </div>
                 <div class="col"></div>
             </div>
             <div class="hex-items row h-50 align-items-center justify-content-center pt-5">
                 <div class="d-flex flex-column align-items-center">
                     <a></a>
-                    <div class="hex hex-hover" onclick="location.href='./es/servicios/serv_es.html'"></div>
-                    <h3 class="hex-text">Tableros de Control</h3>
+                    <div class="hex hex-hover" onclick="location.href='./en/services/serv_en.html'"></div>
+                    <h3 class="hex-text"> Control Boards</h3>
                 </div>
                 <div class="d-flex flex-column align-items-center">
                     <a></a>
-                    <div class="hex hex-hover" onclick="location.href='./es/servicios/inst_es.html'"></div>
-                    <h3 class="hex-text">Instalaciones</h3>
+                    <div class="hex hex-hover" onclick="location.href='./en/services/inst_en.html'"></div>
+                    <h3 class="hex-text">Field Installations</h3>
                 </div>
                 <div class="d-flex flex-column align-items-center">
                     <a></a>
-                    <div class="hex hex-hover" onclick="location.href='./es/servicios/inst_es.html'"></div>
-                    <h3 class="hex-text">PLCs y HMIs</h3>
+                    <div class="hex hex-hover" onclick="location.href='./en/services/inst_en.html'"></div>
+                    <h3 class="hex-text">PLCs and HMIs</h3>
                 </div>
                 <div class="d-flex flex-column align-items-center">
                     <a></a>
-                    <div class="hex hex-hover" onclick="location.href='./es/servicios/devs_es.html'"></div>
-                    <h3 class="hex-text">Desarrollo de Proyectos</h3>
+                    <div class="hex hex-hover" onclick="location.href='./en/services/devs_en.html'"></div>
+                    <h3 class="hex-text">Project Development</h3>
                 </div>
                 <div class="d-flex flex-column align-items-center">
                     <a></a>
-                    <div class="hex hex-hover" onclick="location.href='./es/servicios/apps_es.html'"></div>
-                    <h3 class="hex-text">Desarollo de Aplicaciones</h3>
+                    <div class="hex hex-hover" onclick="location.href='./en/services/apps_en.html'"></div>
+                    <h3 class="hex-text">Motion Control</h3>
                 </div>
                 <div class="d-flex flex-column align-items-center">
                     <a></a>
-                    <div class="hex hex-hover" onclick="location.href='./es/servicios/caps_es.html'"></div>
-                    <h3 class="hex-text">Robotica</h3>
+                    <div class="hex hex-hover" onclick="location.href='./en/services/robs_en.html'"></div>
+                    <h3 class="hex-text">Robotics</h3>
                 </div>
                 <div class="d-flex flex-column align-items-center">
                     <a></a>
-                    <div class="hex hex-hover" onclick="location.href='./es/servicios/robs_es.html'"></div>
-                    <h3 class="hex-text">Capacitaciones</h3>
+                    <div class="hex hex-hover" onclick="location.href='./en/services/caps_en.html'"></div>
+                    <h3 class="hex-text">Training</h3>
                 </div>
             </div>
         </div>
@@ -360,13 +344,13 @@
     <section class="end-img">
         <div class="hex-end-image"></div>
         <div class="container h-100  d-flex flex-column justify-content-center">
-           <div class="row">
-               <div class="col-8">
-                    <h2 class="pec-title bahnschrift font-weight-bold">PROYECTOS ELÉCTRICOS Y CONTROL INDUSTRIAL<br>
-                        <span class="font-weight-normal">INTEGRADORES DE SISTEMAS PARA LA AUTOMATIZACIÓN</span></h2>
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="pec-title bahnschrift font-weight-bold">ELECTRIC PROJECTS AND INDUSTRIAL CONTROL<br>
+                        <span class="font-weight-normal">INTEGRATORS OF AUTOMATION SYSTEMS</span></h2>
                     <div class="dark-pec"></div>
-               </div>
-           </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
@@ -390,8 +374,16 @@
     <script src="/js/jquery.simple-text-rotator.js"></script>
     <script src="/js/jquery.backstretch.min.js"></script>
 
+    <!-- SENDER -->
+
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+
     <!-- JavaScript -->
     <script src="/js/main.js"></script>
+
+    <!-- Form -->
+    <script src="js/form.js"></script>
 </body>
 
 </html>
