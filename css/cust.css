@@ -178,6 +178,42 @@
 .cust-icon:nth-child(17) {
     background-image: url(/img/custColor/penoles.png);
 }
+.cust-icon:nth-child(18) {
+    background-image: url(/img/custColor/coca.png);
+}
+.cust-icon:nth-child(19) {
+    background-image: url(/img/custColor/caz.png);
+}
+.cust-icon:nth-child(20) {
+    background-image: url(/img/custColor/continental.png);
+}
+.cust-icon:nth-child(21) {
+    background-image: url(/img/custColor/bison.png);
+}
+.cust-icon:nth-child(22) {
+    background-image: url(/img/custColor/paynal.png);
+}
+.cust-icon:nth-child(23) {
+    background-image: url(/img/custColor/qmc.png);
+}
+.cust-icon:nth-child(24) {
+    background-image: url(/img/custColor/scania.png);
+}
+.cust-icon:nth-child(25) {
+    background-image: url(/img/custColor/mogul.png);
+}
+.cust-icon:nth-child(26) {
+    background-image: url(/img/custColor/vianney.png);
+}
+.cust-icon:nth-child(27) {
+    background-image: url(/img/custColor/exedi.png);
+}
+.cust-icon:nth-child(28) {
+    background-image: url(/img/custColor/purifika.png);
+}
+.cust-icon:nth-child(29) {
+    background-image: url(/img/custColor/swf.png);
+}
 
 @media (max-width: 1600px) {
 

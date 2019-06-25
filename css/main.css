@@ -81,6 +81,13 @@ body {
 
 /* MAIN HEADER */
 
+.image-pec-requested{
+    background: url(/img/NewLogo/INDUSTRIAL.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
 .main-img {
 
     position: relative;
@@ -95,6 +102,15 @@ body {
 
     overflow: hidden;
     /* background-attachment: fixed; */
+}
+
+.hex-main{
+    width: 100%;
+    background: #0095F8;
+}
+
+.hex-columnizer {
+    height: 258px;
 }
 
 .main-title {
@@ -129,66 +145,6 @@ body {
     height: 30px;
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-.main-list {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
-    font-weight: 600;
-}
-
-.main-list li {
-    cursor: pointer;
-}
-
-.main-list .serv-icon {
-    display: block;
-    height: 30px;
-    width: 30px;
-
-    background-repeat: no-repeat;
-    filter: invert(1) opacity(.8);
-    background-size: contain;
-    background-position: center;
-}
-
-.main-list li:hover .row {
-    transform: translateX(10px);
-}
-
-.main-list li:nth-child(2) .serv-icon {
-    background-image: url(/img/icons/one.png);
-}
-
-.main-list li:nth-child(3) .serv-icon {
-    background-image: url(/img/icons/three.png);
-}
-
-.main-list li:nth-child(4) .serv-icon {
-    background-image: url(/img/icons/two.png);
-}
-
-.main-list li:nth-child(5) .serv-icon {
-    background-image: url(/img/icons/five.png);
-}
-
-.main-list li:nth-child(6) .serv-icon {
-    background-image: url(/img/icons/four.png);
-}
-
-.main-list li:nth-child(7) .serv-icon {
-    background-image: url(/img/icons/seven.png);
-}
-
-.main-list li:nth-child(8) .serv-icon {
-    background-image: url(/img/icons/six.png);
-}
-
-.main-list .active {
-    cursor: default;
-    background: #F5F5F5;
-    border: none;
-    color: #0A193B;
 }
 
 /* Main Subtitle */
@@ -264,11 +220,11 @@ body {
     /* background: #081624; */
     background: #ffffff;
     opacity: .6;
-    transform: translate(-70%, -30%) rotate(0deg);
+    transform: translate(-70%, -45%) rotate(0deg);
 }
 
 .grand-hex:nth-child(1) {
-    transform: translate(-80%, -30%) rotate(0deg);
+    transform: translate(-80%, -45%) rotate(0deg);
 }
 
 .grand-hex:before,
@@ -394,8 +350,8 @@ body {
     display: inline-block;
     width: 120px;
     height: 30px;
-    margin-top: 5px;
-    margin-left: 3px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 /* BARNDING IMAGES */

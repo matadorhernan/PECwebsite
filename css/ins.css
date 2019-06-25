@@ -24,6 +24,7 @@
 .main-services {
     height: 600px;
     background-image: linear-gradient(90deg, #00000057, #0000003d),url(/img/bg/cables5.jpg);
+    background-size: -100%;
 }
 
 .main-services h1 {
