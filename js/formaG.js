@@ -6,6 +6,13 @@
  * @param email
  */
 
+$('#senderbutton').click(()=>{
+    console.log('Enviando Email...')
+    
+    $('#senderbutton').text('Enviando')
+    $('#senderbutton').attr("disabled", true);
+})
+
 $('#contact-form').validate({
     rules: {
         email: {
@@ -22,11 +29,11 @@ $('#contact-form').validate({
         },
         phone: {
             required: true,
-            minlength: 6
+            minlength: 5
         },
         message: {
             required: true,
-            minlength: 10
+            minlength: 2
         }
     },
     errorPlacement: function(error,element) {
@@ -47,11 +54,14 @@ $('#contact-form').validate({
         $(form).ajaxSubmit({
             type: "POST",
             data: $(form).serialize(),
-            url: "php/contact.php",
+            url: "/php/contact.php",
             success: function () {
+                console.log('Enviado');
                 $('#senderbutton').text('Gracias')
+                $('#senderbutton').attr("disabled", false);
             },
-            error: function () {
+            error: function (error) {
+                console.log(error);
                 $('#senderbutton').text('Error')
             }
         });

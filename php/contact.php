@@ -1,6 +1,6 @@
 <?php
 
-    $to = "ventas@pecindustrial.net"; //Change email here
+    $to = "ventas@pecindustrial.net, ventaspecindustrial@infinitummail.com"; //Change email here
     $from = $_REQUEST['email']; 
     $headers = "From: $from"; 
     $subject = $_REQUEST['subject']; 

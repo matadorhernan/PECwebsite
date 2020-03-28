@@ -182,47 +182,50 @@
             </div>
 
             <div class="h-50 d-flex align-items-center justify-content-center flex-column">
-                <h2 class="bahnschrift text-white w-100 text-left">CONTACT US</h2>
-
-                <div class="row w-100">
-                    <div class="col-6">
-                        <div class="form-group">
-                            <input type="text" name="" id="" class="form-control" placeholder="*email"
-                                aria-describedby="helpId">
+                <form action="/php/contact.php" method="post" id="contact-form" class="w-100">
+                    <h2 class="bahnschrift text-white w-100 text-left">CONTACT US</h2>
+    
+                    <div class="row w-100">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input type="text" name="email" id="" class="form-control" placeholder="*email"
+                                    aria-describedby="helpId">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input type="text" name="company" id="" class="form-control" placeholder="*Company"
+                                    aria-describedby="helpId">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="form-group">
-                            <input type="text" name="" id="" class="form-control" placeholder="*Company"
-                                aria-describedby="helpId">
+                    <div class="row w-100 mb-2">
+                        <div class="col-8">
+                            <div class="form-group">
+                                <input type="text" name="subject" id="" class="form-control" placeholder="*Subject"
+                                    aria-describedby="helpId">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="phone" id="" class="form-control" placeholder="*Phone"
+                                    aria-describedby="helpId">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row w-100 mb-2">
-                    <div class="col-8">
-                        <div class="form-group">
-                            <input type="text" name="" id="" class="form-control" placeholder="*Subject"
-                                aria-describedby="helpId">
+                    <div class="row w-100">
+                        <div class="col">
+                            <div class="form-group">
+                                <textarea placeholder="*Message" class="form-control" name="message" id="" rows="8"></textarea>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <input type="text" name="" id="" class="form-control" placeholder="*Phone"
-                                aria-describedby="helpId">
-                        </div>
+                    <div class="row w-100 mb-5 pr-3">
+                        <button id="senderbutton" type="submit"
+                            class="btn bg-white font-weight-bold border round ml-auto" role="button"
+                            value="Send">SEND</button>
                     </div>
-                </div>
-                <div class="row w-100">
-                    <div class="col">
-                        <div class="form-group">
-                            <textarea placeholder="*Message" class="form-control" name="" id="" rows="8"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="row w-100 mb-5 pr-3">
-                    <a name="" id="" class="btn bg-white font-weight-bold ml-auto px-4" href="#"
-                        role="button">SEND</a>
-                </div>
+                </form>
             </div>
     </section>
     <footer>
@@ -237,17 +240,17 @@
         </p>
     </footer>
     <!-- JavaScript -->
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     </script>
+    <!-- SENDER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script src="../../js/formG.js"></script>
 </body>
 
 </html>
